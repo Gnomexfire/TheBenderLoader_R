@@ -1,0 +1,45 @@
+﻿<controls:MetroWindow  x:Class="BenderLoader.View.Config"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        ResizeMode="CanMinimize" BorderBrush="Black" BorderThickness="1" TitleCaps="False" WindowStartupLocation="CenterScreen"
+        Height="140" Width="384.827" Loaded="MetroWindow_Loaded">
+
+
+    <controls:MetroWindow.RightWindowCommands>
+        <controls:WindowCommands>
+
+            <!--Botao  News-->
+            <Button Cursor="Hand" x:Name="CmdUpdate" Visibility="Visible">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="20" Height="20"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+                         Visual="{StaticResource appbar_download}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock x:Name="TUpdateManual" Margin="4 0 0 0"
+                                   VerticalAlignment="Center"
+                                   Text="{StaticResource PtTUpdateManual}" />
+                </StackPanel>
+            </Button>
+
+        </controls:WindowCommands>
+    </controls:MetroWindow.RightWindowCommands>
+    
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="96" Margin="10,10,0,0" VerticalAlignment="Top" Width="357">
+            <Label x:Name="LblSelIdioma" Content="Selecionar o Idioma :" Canvas.Left="10" Canvas.Top="10"/>
+            <ComboBox x:Name="ComboBox" Canvas.Left="131" Canvas.Top="10" Width="216" IsReadOnly="True" SelectedIndex="0">
+                <ComboBoxItem Content="Portuguese - Brazilian "/>
+                <ComboBoxItem Content="English - USA"/>
+                <ComboBoxItem Content="French - France"/>
+                <ComboBoxItem Content="Korean - Korea"/>
+            </ComboBox>
+            <CheckBox x:Name="ChkMinInject" Content="Minimizar ao Injetar" Canvas.Left="10" Canvas.Top="41" Width="151"/>
+            <CheckBox x:Name="ChkNotInject" Content="Notificar ao Injetar" Canvas.Left="10" Canvas.Top="68" Width="151"/>
+            <Button x:Name="CmdConfirmar" Content="Confirmar" Canvas.Left="255" Canvas.Top="61" Width="92" Click="CmdConfirmar_Click"/>
+        </Canvas>
+    </Grid>
+</controls:MetroWindow>

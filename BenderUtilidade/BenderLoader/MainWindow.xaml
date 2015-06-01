@@ -1,0 +1,97 @@
+﻿<controls:MetroWindow  x:Class="BenderLoader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        ResizeMode="CanMinimize" BorderBrush="Black" BorderThickness="1" TitleCaps="False" WindowStartupLocation="CenterScreen"
+        Height="140" Width="666" Loaded="MetroWindow_Loaded">
+
+    <!--WindowsControls-->
+
+    <controls:MetroWindow.RightWindowCommands>
+        <controls:WindowCommands>
+
+            <!--Botao  News-->
+            <Button Cursor="Hand" x:Name="CmdNovaNoticia" Visibility="Visible">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="20" Height="20"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+                         Visual="{StaticResource appbar_os_gnome}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock x:Name="TNovaNoticia" Margin="4 0 0 0"
+                                   VerticalAlignment="Center"
+                                   Text="{StaticResource PtTNovaNoticia}" />
+                </StackPanel>
+            </Button>
+
+            <!--Botao De Suporte-->
+            <Button Cursor="Hand" x:Name="CmdSuporte" Visibility="Visible">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="20" Height="20"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+                         Visual="{StaticResource appbar_social_facebook_variant}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock x:Name="TSuporte" Margin="4 0 0 0"
+                                   VerticalAlignment="Center"
+                                   Text="{StaticResource PtTSuporte}" />
+                </StackPanel>
+            </Button>
+
+            <!--Botao De Donate-->
+            <Button Cursor="Hand" x:Name="CmdDonate" Visibility="Visible">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="20" Height="20"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+                         Visual="{StaticResource appbar_paypal}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock x:Name="TDonate" Margin="4 0 0 0"
+                                   VerticalAlignment="Center"
+                                   Text="{StaticResource PtTDonate}" />
+                </StackPanel>
+            </Button>
+
+            <!--Botao De Config-->
+            <Button Cursor="Hand" x:Name="CmdConfig" Visibility="Visible" Click="CmdConfig_OnClick">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="20" Height="20"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+                         Visual="{StaticResource appbar_cog}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock x:Name="TConfig" Margin="4 0 0 0"
+                                   VerticalAlignment="Center"
+                                   Text="{StaticResource PtTConfig}" />
+                </StackPanel>
+            </Button>
+
+        </controls:WindowCommands>
+    </controls:MetroWindow.RightWindowCommands>
+
+    <!--WindowsControls-->
+
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="90" Margin="10,10,0,0" VerticalAlignment="Top" Width="638">
+            <Label x:Name="LblStatusFerramenta" Content="Status Ferramenta :" Canvas.Left="10" Canvas.Top="11" FontFamily="Tahoma" Foreground="#FF002EFF"/>
+            <Label Content="Disponível" Canvas.Left="126" Canvas.Top="10" Width="102"/>
+            <Label x:Name="LblCoreVersion" Content="Core Versão :" Canvas.Left="234" Canvas.Top="10" FontFamily="Tahoma" Foreground="#FF002EFF"/>
+            <Label Content="0.0.0" Canvas.Left="319" Canvas.Top="10" Width="85"/>
+            <Label x:Name="LblCompilado" Content="Compilado :" Canvas.Left="452" Canvas.Top="10" FontFamily="Tahoma" Foreground="#FF002EFF"/>
+            <Label Content="00/00/0000" Canvas.Left="531" Canvas.Top="10" Width="86"/>
+            <Label x:Name="LblVersaoDisponivel" Content="Versão Jogo Disponível :" Canvas.Left="10" Canvas.Top="41" FontFamily="Tahoma" Foreground="#FF002EFF"/>
+            <Label Content="League of Legends 0.0.00_00_00_00_00" Canvas.Left="155" Canvas.Top="40" Width="250"/>
+            <Label x:Name="LblEstadoJogo" Content="Estado Jogo :" Canvas.Left="434" Canvas.Top="41" FontFamily="Tahoma" Foreground="#FF002EFF"/>
+            <Label Content="Aguardando . . ." Canvas.Left="519" Canvas.Top="40"/>
+            <Label Content="By GNomeFire" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" FontFamily="Courier New" FontSize="13" Height="28" Foreground="#FF002EFF" Canvas.Left="10" Canvas.Top="65"/>
+        </Canvas>
+    </Grid>
+</controls:MetroWindow>

@@ -1,0 +1,81 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!--Portugues--> 
+    <!--MainWindow-->
+    <system:String x:Key="PtTDonate">Doação</system:String> 
+    <system:String x:Key="PtTSuporte">Suporte</system:String> 
+    <system:String x:Key="PtTNovaNoticia">Novas Notícias</system:String> 
+    <system:String x:Key="PtTConfig">Configuração</system:String>
+
+    <system:String x:Key="PtLblStatusFerramenta">Status Ferramenta :</system:String>
+    <system:String x:Key="PtLblCoreVersion">Core Versão :</system:String>
+    <system:String x:Key="PtLblCompilado">Compilado :</system:String>
+    <system:String x:Key="PtLblVersaoDisponivel">Versão Jogo Disponível :</system:String>
+    <system:String x:Key="PtLblEstadoJogo">Estado Jogo :</system:String>
+    
+    <!--Config Form-->
+    <system:String x:Key="PtLblSelIdioma">Selecionar o Idioma :</system:String>
+    <system:String x:Key="PtChkMinInject">Minimizar ao Injetar</system:String>
+    <system:String x:Key="PtChkNotInject">Notificar ao Injetar</system:String>
+    <system:String x:Key="PtCmdConfirmar">Confirmar</system:String>
+    <system:String x:Key="PtTUpdateManual">Checar Atualização</system:String>
+    
+    
+    
+    
+
+
+    <!--english -->
+    <system:String x:Key="EnTDonate">Donation</system:String> 
+    <system:String x:Key="EnTSuporte">Support</system:String> 
+    <system:String x:Key="EnTNovaNoticia">Upcoming News</system:String> 
+    <system:String x:Key="EnTConfig">Configuration</system:String>
+    <system:String x:Key="EnLblSelIdioma">Select Language :</system:String>
+    <system:String x:Key="EnChkMinInject">Minimize to Inject</system:String>
+    <system:String x:Key="EnChkNotInject">Notify to Inject</system:String>
+    <system:String x:Key="EnCmdConfirmar">Confirm</system:String>
+    <system:String x:Key="EnTUpdateManual">Check Update</system:String>
+
+    <system:String x:Key="EnLblStatusFerramenta">Status Tool :</system:String>
+    <system:String x:Key="EnLblCoreVersion">Core Version :</system:String>
+    <system:String x:Key="EnLblCompilado">Compiled :</system:String>
+    <system:String x:Key="EnLblVersaoDisponivel">Game Version Available :</system:String>
+    <system:String x:Key="EnLblEstadoJogo">State Game :</system:String>
+
+    <!--france-->
+    <system:String x:Key="frTDonate">Don</system:String>
+    <system:String x:Key="frTSuporte">Titulaire</system:String>
+    <system:String x:Key="frTNovaNoticia">Nouveau Nouvelles</system:String>
+    <system:String x:Key="frTConfig">Configuration</system:String>
+    <system:String x:Key="frLblSelIdioma">Choisir La Langue :</system:String>
+    <system:String x:Key="frChkMinInject">Réduire à la Injecter</system:String>
+    <system:String x:Key="frChkNotInject">Aviser Injecter</system:String>
+    <system:String x:Key="frCmdConfirmar">Confirmer</system:String>
+    <system:String x:Key="frTUpdateManual">Vérifiez Mise à jour</system:String>
+
+    <system:String x:Key="frLblStatusFerramenta">Statut Outil :</system:String>
+    <system:String x:Key="frLblCoreVersion">Core Version :</system:String>
+    <system:String x:Key="frLblCompilado">Compilé :</system:String>
+    <system:String x:Key="frLblVersaoDisponivel">Version du jeu Disponible :</system:String>
+    <system:String x:Key="frLblEstadoJogo">State Game :</system:String>
+    
+    <!--Korea-->
+    <system:String x:Key="KoTDonate">기부</system:String>
+    <system:String x:Key="KoTSuporte">보유자</system:String>
+    <system:String x:Key="KoTNovaNoticia">새로운 뉴스</system:String>
+    <system:String x:Key="KoTConfig">구성</system:String>
+
+    <system:String x:Key="KoLblSelIdioma">언어 선택 :</system:String>
+    <system:String x:Key="KoChkMinInject">주입 최소화</system:String>
+    <system:String x:Key="KoChkNotInject">주입 알림</system:String>
+    <system:String x:Key="KoCmdConfirmar">확인</system:String>
+    <system:String x:Key="KoTUpdateManual">업데이트 확인</system:String>
+
+    <system:String x:Key="KoLblStatusFerramenta">상태 도구 :</system:String>
+    <system:String x:Key="KoLblCoreVersion">Core 버전 :</system:String>
+    <system:String x:Key="KoLblCompilado">컴파일 :</system:String>
+    <system:String x:Key="KoLblVersaoDisponivel">게임 버전을 사용할 수 :</system:String>
+    <system:String x:Key="KoLblEstadoJogo">주 게임 :</system:String>
+</ResourceDictionary>
